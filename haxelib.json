@@ -1,0 +1,12 @@
+{
+    "name"         : "folderNode",
+    "url"          : "https://github.com/nanjizal/folderNode#folderNode",
+    "license"      : "MIT",
+    "tags"         : ["nodejs","js"],
+    "description"  : "folderNode provides helpers for working with Node, files and folders.",
+    "version"      : "0.0.1",
+    "releasenote"  : "See https://github.com/nanjizal/folderNode/blob/master/CHANGELOG.md",
+    "classPath"    : "src",
+    "contributors" : ["Nanjizal"],
+    "dependencies" : { hxnodejs }
+}
