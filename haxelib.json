@@ -8,5 +8,5 @@
     "releasenote"  : "See https://github.com/nanjizal/folderNode/blob/master/CHANGELOG.md",
     "classPath"    : "src",
     "contributors" : ["Nanjizal"],
-    "dependencies" : { hxnodejs }
+    "dependencies" : {}
 }
