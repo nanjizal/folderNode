@@ -1,4 +1,4 @@
-package hxTShopify.connection;
+package folderNode.connection;
 import haxe.Http;
 import haxe.Json;
 import js.html.XMLHttpRequest;
