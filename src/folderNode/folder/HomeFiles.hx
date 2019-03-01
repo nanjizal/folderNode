@@ -18,7 +18,7 @@ class HomeFiles{
         var f = pathTo( str );
         if( !FileSystem.exists( f ) ) {
             FileSystem.createDirectory( f );
-            if( addToLog != null ) log( "created folder '" + str + "'");
+            if( log != null ) log( "created folder '" + str + "'");
             return false;
         } else {
             return true;
