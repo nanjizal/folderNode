@@ -37,7 +37,7 @@ class HomeFiles{
     public static inline function getBytes( path : String ) : Null<haxe.io.Bytes> {
         var f = pathTo( str );
         if( FileSystem.exists( f ) ){
-            return sys.io.File..getBytes( f );
+            return sys.io.File.getBytes( f );
         }
         return null;
     }
