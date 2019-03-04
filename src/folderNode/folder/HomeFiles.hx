@@ -42,7 +42,7 @@ class HomeFiles{
     }
     public function saveBytes( fileName: String, bytes : haxe.io.Bytes ) : Void {
         var f = pathTo( fileName );
-        sys.io.File.saveBytes( f, b );
+        sys.io.File.saveBytes( f, bytes );
     }
     public function saveToFile( fileName: String, content: String ){
         var f = pathTo( fileName );
