@@ -33,7 +33,6 @@ class HomeFiles{
     public function pathTo( str: String ){
         return homeDir + '/' + str;
     }
-    
     public function getBytes( str : String ) : Null<haxe.io.Bytes> {
         var f = pathTo( str );
         if( FileSystem.exists( f ) ){
@@ -41,12 +40,10 @@ class HomeFiles{
         }
         return null;
     }
-    
-    public function saveBytes( filename: String, bytes : haxe.io.Bytes ) : Void {
+    public function saveBytes( fileName: String, bytes : haxe.io.Bytes ) : Void {
         var f = pathTo( fileName );
         sys.io.File.saveBytes( f, b );
     }
-    
     public function saveToFile( fileName: String, content: String ){
         var f = pathTo( fileName );
         sys.io.File.saveContent( f, content );
