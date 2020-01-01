@@ -11,14 +11,14 @@ class DownLoadToLocal{
                         , loada_: Void->Void
                         , progress_: Int->Void
                         , error_: String->Void ){
-        DownLoader.log('DownLoad.load');
+        DownLoaderToLocal.log('DownLoad.load');
         var file = js.node.Fs.createWriteStream( fileName );
         var request = js.node.Http.get( url_, function( response ) {
             //this.setHeader ("Content-type", "application/json"); 
-            DownLoader.log( 'requesting ' + url_ );
+            DownLoaderToLocal.log( 'requesting ' + url_ );
             var len = Std.parseInt(response.headers['content-length']);
             var ratio = 100/len;
-            DownLoader.log(' load ' );
+            DownLoaderToLocal.log(' load ' );
             response.pipe( file ).on('finish'
                                     , function() { 
                                         DownLoader.log(' finish ' );
@@ -28,12 +28,12 @@ class DownLoadToLocal{
             response.on( 'data', function( chunk ) {
                 len -= chunk.length;
                 progress_( Math.ceil( len*ratio ) );
-                DownLoader.log(' loading...' );
+                DownLoaderToLocal.log(' loading...' );
               });
         });
-        DownLoader.log('DownLoad.request');
+        DownLoaderToLocal.log('DownLoad.request');
         request.on( 'error', function( err){
-            DownLoader.log( 'error ' + err );
+            DownLoaderToLocal.log( 'error ' + err );
             error_( err );
         });
     }
