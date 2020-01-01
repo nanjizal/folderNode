@@ -21,7 +21,7 @@ class DownLoadToLocal{
             DownLoaderToLocal.log(' load ' );
             response.pipe( file ).on('finish'
                                     , function() { 
-                                        DownLoader.log(' finish ' );
+                                        DownLoaderToLocal.log(' finish ' );
                                         file.end();
                                         loada_();
                                       });
