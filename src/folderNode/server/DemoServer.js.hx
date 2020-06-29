@@ -1,5 +1,5 @@
 package folderNode.server;
-import folderNode.server.Shop;
+import folderNode.server.Server;
 // example use of server add your specific Private application details here:
 class DemoServer implements IServer {
     public function new(){}

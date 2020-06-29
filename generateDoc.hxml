@@ -1,0 +1,5 @@
+-D haxe4
+-cmd haxe generateJS.hxml
+-cmd haxelib run dox -i upkeep --title "folderNode API documentation" -D themeColor 0x003399 --toplevel-package folderNode
+-cmd cd pages
+-cmd open index.html

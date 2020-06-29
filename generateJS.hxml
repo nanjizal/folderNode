@@ -1,0 +1,19 @@
+# lime dox flags
+-D display
+-D html5
+-D doc_gen
+-D lime-doc-gen
+-lib hxnodejs
+-D doc-gen
+#-D no-deprecation-warnings
+--macro include('folderNode.connection')
+--macro include('folderNode.folder')
+--macro include('folderNode.server')
+-cp src
+-main folderNode.upkeep.Doc
+--no-output
+
+-xml upkeep/js.xml
+-js foo.js
+
+# -D dump==pretty

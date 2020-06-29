@@ -28,7 +28,7 @@ class Server {
     public
     function constructPath( resource_: String, ?extra_: String ): String {
         var resource = resource_;
-        var out: String = 'https://$apiKey:$password@$baseUrl$path/$resource.json';
+        var out: String = 'https://$apiKey:$password@$baseUrl/$resource.json';
         if( extra_ != null ) out = out + extra_;
         return out;
     }
